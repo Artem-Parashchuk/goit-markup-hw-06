@@ -42,6 +42,7 @@
             href="/"
             >Web<span class="logo-text">Studio</span></a
           >
+
           <ul class="nav-list list">
             <li class="nav-title">
               <a
@@ -85,7 +86,139 @@
             </li>
           </ul>
         </address>
+
+        <button
+          class="mobile-open-btn"
+          type="button"
+        >
+          <svg
+            class="mobile-open-icon"
+            width="24"
+            height="24"
+          >
+            <use href="./images/icons.svg#icon-close-menu"></use>
+          </svg>
+        </button>
       </div>
+      <!-- ----------------------Mobile menu---------- -->
+      <div class="mobile-menu-wrap">
+        <div class="mobile-menu">
+          <button
+            class="menu-close-btn"
+            type="button"
+          >
+            <svg
+              class="menu-icon-closed"
+              width="8"
+              height="8"
+            >
+              <use href="./images/icons.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a
+                  class="mobile-menu-link active"
+                  href=""
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a
+                  class="mobile-menu-link"
+                  href=""
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a
+                  class="mobile-menu-link"
+                  href=""
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-address-list list">
+              <li class="mobile-address-title">
+                <a
+                  class="mobile-address-link link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-address-title">
+                <a
+                  class="mobile-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-social-network">
+            <ul class="mobile-social-list">
+              <li class="mobile-social-item">
+                <a
+                  class="mobile-social-link"
+                  href=""
+                >
+                  <svg
+                    class="mobile-social-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a
+                  class="mobile-social-link"
+                  href=""
+                >
+                  <svg
+                    class="mobile-social-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a
+                  class="mobile-social-link"
+                  href=""
+                >
+                  <svg
+                    class="mobile-social-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="mobile-social-item">
+                <a
+                  class="mobile-social-link"
+                  href=""
+                >
+                  <svg
+                    class="mobile-social-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------/Mobile menu---------- -->
     </header>
     <!---------------------------/Header----------------------->
     <main>
@@ -183,6 +316,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="./images/team/mark1.jpg 1x, ./images/team/mark1@x2.jpg 2x"
                 src="./images/team/mark1.jpg"
                 alt="photo Mark Guerrero"
                 width="264"
@@ -252,6 +386,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team/tom2.jpg 1x, ./images/team/tom2@x2.jpg 2x"
                 src="./images/team/tom2.jpg"
                 alt="photo Tom Ford "
                 width="264"
@@ -321,6 +456,7 @@
             </li>
             <li class="team-list-item">
               <img
+              srcset="./images/team/camila3.jpg 1x, ./images/team/camila3@x2.jpg 2x"
                 src="./images/team/camila3.jpg"
                 alt="photo Camila Garcia"
                 width="264"
@@ -391,6 +527,7 @@
             </li>
             <li class="team-list-item">
               <img
+              srcset="./images/team/daniel4.jpg 1x, ./images/team/daniel4@x2.jpg 2x"
                 src="./images/team/daniel4.jpg"
                 alt="photo Daniel Wilson"
                 width="264"
@@ -471,6 +608,7 @@
               <div class="portfolio-overlay-block">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio/img1.jpg 1x, ./images/portfolio/img1@2x.jpg 2x"
                   src="./images/portfolio/img1.jpg"
                   alt="Banking App Interface"
                   width="360"
@@ -490,6 +628,7 @@
               <div class="portfolio-overlay-block">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio/img2.jpg 1x, ./images/portfolio/img2@2x.jpg 2x"
                   src="./images/portfolio/img2.jpg"
                   alt="Payment by phone"
                   width="360"
@@ -509,6 +648,7 @@
               <div class="portfolio-overlay-block">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio/img3.jpg 1x, ./images/portfolio/img3@2x.jpg 2x"
                   src="./images/portfolio/img3.jpg"
                   alt="App for Meditation"
                   width="360"
@@ -528,6 +668,7 @@
               <div class="portfolio-overlay-block">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio/img4.jpg 1x, ./images/portfolio/img4@2x.jpg 2x"
                   src="./images/portfolio/img4.jpg"
                   alt="Service for taxi"
                   width="360"
@@ -548,6 +689,7 @@
               <div class="portfolio-overlay-block">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio/img5.jpg 1x, ./images/portfolio/img5@2x.jpg 2x"
                   src="./images/portfolio/img5.jpg"
                   alt="Illustrations fot phone"
                   width="360"
@@ -568,6 +710,7 @@
               <div class="portfolio-overlay-block">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio/img6.jpg 1x, ./images/portfolio/img6@2x.jpg 2x"
                   src="./images/portfolio/img6.jpg"
                   alt="The girl holds the phone in her hands"
                   width="360"
@@ -664,7 +807,10 @@
           <p class="subscribe-title">Subscribe</p>
           <form class="subscribe-form">
             <!-- <div class="subscribe-block"> -->
-            <label class="subscribe-label" for="subscribe-email">
+            <label
+              class="subscribe-label"
+              for="subscribe-email"
+            >
               <input
                 class="subscribe-input"
                 type="email"
