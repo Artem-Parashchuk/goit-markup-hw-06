@@ -239,7 +239,7 @@ main {
     row-gap: 8px;
   }
 }
-@media (min-width: 1158px) {
+@media (min-width: 1157px) {
   .address-title:not(:last-child) {
     margin-right: 40px;
   }
@@ -1116,4 +1116,4 @@ main {
   text-decoration: underline;
 }
 
-/* ================/Backdrop=================== */
+/* ================/Modal window=================== */
