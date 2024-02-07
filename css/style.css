@@ -51,20 +51,9 @@ main {
 }
 .container {
   min-width: 320px;
-  max-width: 1158px;
+  max-width: 1188px;
   margin: 0 auto;
-  padding: 0 16px;
-}
-@media (max-width: 768px) and (min-width: 1158px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
+  padding: 0 15px;
 }
 
 /* ===============Header================ */
@@ -81,7 +70,6 @@ main {
 }
 .header-container {
   display: flex;
-  padding: 0 16px;
   justify-content: space-between;
 }
 .header-nav {
@@ -229,7 +217,7 @@ main {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1157px) {
   .address {
     display: flex;
   }
@@ -486,7 +474,7 @@ main {
 }
 .company-item {
   margin: 0 auto;
-  width: 288px;
+  max-width: 288px;
 }
 
 .company-title {
@@ -509,16 +497,18 @@ main {
   .company-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    justify-content: space-between;
+    gap: 72px 24px;
   }
   .company-title {
     text-align: left;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1157px) {
   .company-item {
-    width: 356px;
+    min-width: 356px;
+    margin: 0;
   }
 }
 
@@ -583,7 +573,7 @@ main {
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
   /* width: calc((100% - 72px) / 4); */
-  width: 264px;
+  max-width: 264px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -634,15 +624,16 @@ main {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
   }
 }
-@media (min-width: 768px) and (max-width: 1158px) {
-  .team-list-item {
-    margin: 0;
-  }
+@media (min-width: 768px) and (max-width: 1157px) {
+
   .team-list {
-    row-gap: 64px;
+    gap: 72px 24px;
+  }
+  .team-list-item {
+    max-width: 264px;
+    margin: 0;
   }
 }
 @media (min-width: 1158px) {
@@ -650,7 +641,8 @@ main {
     padding: 120px 0;
   }
   .team-list {
-    padding: 0;
+    flex-wrap: nowrap;
+    gap: 24px ;
   }
 }
 /* ================/Team==================*/
@@ -770,13 +762,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  row-gap: 72px;
 }
 .footer-description {
   margin: 0 auto;
-}
-.footer-description {
-  /* margin-right: 120px; */
-  margin-bottom: 72px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -802,7 +791,7 @@ main {
 }
 
 .footer-social {
-  margin: 0 auto 72px;
+  margin: 0 auto;
 }
 .social-item {
   text-align: center;
@@ -870,6 +859,7 @@ main {
 }
 .subscribe-input::placeholder {
   color: #fff;
+  opacity: .6;
 }
 .subscribe-input:focus {
   border-color: var(--color-btn-text);
@@ -918,7 +908,7 @@ main {
     text-align: start;
   }
   .footer-social {
-    margin: 0 80px 0 0;
+    max-width: 208px;
   }
   .social-item {
     text-align: start;
@@ -926,9 +916,11 @@ main {
   .subscribe {
     margin: 0;
   }
+  .subscribe-label {
+    margin-right: 24px;
+  }
   .subscribe-input {
     width: 264px;
-    margin-right: 24px;
   }
   .subscribe-title {
     text-align: start;
@@ -938,19 +930,26 @@ main {
     gap: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1157px) {
   .footer-container {
-    padding-left: 108px;
+    margin-left: 108px;
+    row-gap: 72px;
   }
   .footer-description {
-    margin: 0 24px 72px 0;
+    max-width: 264px;
+    margin: 0 24px 0 0;
+  }
+  .footer-social {
+    margin: 0;
   }
 }
 @media (min-width: 1157px) {
-
   .footer-description {
     width: 264px;
     margin: 0 120px 0 0;
+  }
+  .footer-social {
+    margin: 0 80px 0 0;
   }
 }
 
